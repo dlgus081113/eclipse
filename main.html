@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -15,9 +17,9 @@
         <ul>
             <li><a href="#">카테고리 1</a></li>
             <li><a href="#">카테고리 2</a></li>
-            <li><a href="main.html">카테고리 3</a></li>
+            <li><a href="main.jsp">카테고리 3</a></li>
             <li><a href="#">카테고리 4</a></li>
-            <li><a href="index.html">카테고리 5</a></li>
+            <li><a href="index.jsp">카테고리 5</a></li>
         </ul>
     </nav>
 
@@ -37,10 +39,10 @@
                     <td>미용번호</td>
                     <td> <select name="hair_num">
                                     <option value="24001">24001</option>
-                                    <option value="24001">24002</option>
-                                    <option value="24001">24003</option>
-                                    <option value="24001">24004</option>
-                                    <option value="24001">24005</option>
+                                    <option value="24002">24002</option>
+                                    <option value="24003">24003</option>
+                                    <option value="24004">24004</option>
+                                    <option value="24005">24005</option>
                         </select> 
                     </td>
                 </tr>
@@ -61,10 +63,25 @@
                 </tr>
                 <tr>
                     <td>미용예약일</td>
-                    <td> <input type="number" name="cost"> </td>
+                    <td> <input type="text" name="reg_day"> </td>
                 </tr>
-                
-
+                <tr>
+                    <td>결제방법</td>
+                    <td> <select name="pay_name">
+                                    <option value="1">현금</option>
+                                    <option value="2">계좌이체</option>
+                                    <option value="3">신용카드</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan=2 align="center">
+                		<input type="submit" value="예약하기">
+                		<input type="reset" value="다시쓰기">
+                	</td>           	
+                </tr>
         </table>
         </form>
     </main>
+</body>
+</html>
