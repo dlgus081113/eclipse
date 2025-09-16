@@ -1,57 +1,12 @@
-/* 기본 스타일 초기화 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* html과 body를 화면 전체 높이로 설정 */
-html, body {
-    height: 100%;
-}
-
-body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    /* --- 푸터 고정을 위한 flex 설정 (시작) --- */
-    display: flex;
-    flex-direction: column;
-    /* ------------------------------------ */
-}
-
 a {
-    text-decoration: none;
-    color: inherit;
+	color: white;
 }
 
-ul {
-    list-style: none;
-}
-
-/* 헤더 스타일 */
 header {
-    background-color: #f8f9fa;
-    padding: 3rem 5rem;
-    display: flex;
-    justify-content: space-between; /* 자식 요소들을 양 끝으로 정렬 */
-    align-items: center;
-    border-bottom: 1px solid #dee2e6;
-    position: relative; /* --- h1 중앙 정렬을 위해 부모 요소에 relative 추가 --- */
-    height: 60px; /* 헤더 높이를 고정해주는 것이 좋습니다 */
-}
-
-header h1 {
-    /* --- 'My Website' 중앙 정렬을 위한 코드 (시작) --- */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* --------------------------------------------- */
-}
-
-header h1 a {
-    font-size: 1.5rem;
-    font-weight: bold;
+	background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 header nav ul {
@@ -61,8 +16,8 @@ header nav ul {
 
 /* 카테고리 네비게이션 스타일 */
 .category-nav {
-    background-color: #343a40;
-    color: white;
+    background-color: #8080ff;
+    color: #8080ff;
     padding: 0.8rem 2rem;
 }
 
@@ -76,27 +31,10 @@ header nav ul {
     color: #f0e68c; /* 마우스를 올렸을 때 색상 변경 */
 }
 
-/* 메인 콘텐츠 스타일 */
-main {
-    padding: 2rem;
-    /* --- 푸터 고정을 위해 main 영역이 남은 공간을 모두 차지하도록 설정 --- */
-    flex-grow: 1; 
-}
-
-/* 테이블 중앙 정렬 */
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* h2 태그 중앙 정렬 */
-h2 {
-    text-align: center;
-    margin-bottom: 2rem; /* 제목 아래에 공백 띄우기 */
-}
-
-/* 푸터 스타일 */
 footer {
+	position: fixed;
+  	bottom: 0;
+  	width: 100%;
     background-color: #343a40;
     color: white;
     text-align: center;
